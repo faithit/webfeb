@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color:yellow;
+}
+.nav-list{
+    list-style-type:none;
+    display:flex;/* Make the list items inline */
+    justify-content: center;
+    padding: 10px 0;
+}
+.nav-list li{
+    margin:0 10px ;
+}
+.nav-list li a{
+    color:purple;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/*hover effect on the links*/
+.nav-list li a:hover{
+    background-color: #555;
+}
+.box{
+    background-color: aqua;
+    width:500px;
+    border: 5px double green;
+    margin:50px auto;
+    padding:50px;
+}
+#one{
+    color:green
+}
+.two{
+    color:blue
+}
