@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration form</h3>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="fname">NAME:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass">
+            <br><br>
+            <label>GENDER:</label>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">Female</label>
+        </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Academic Information</legend>
+            <label>course</label>
+            <select name="course" multiple="multiple">
+                <option value="Android">Android</option>
+                <option value="Web development">Web development</option>
+                <option value="Fullstack">Fullstack</option>
+                <option value="Datascience">Datascience</option>
+                <option value="MOS">MOS</option>
+            </select>
+            <br><br>
+            <label for="about">Tell us about yourself</label><br>
+            <textarea id="about" cols="30" rows="5">
+            </textarea><br>
+            <label>upload files</label>
+            <input type="file" accept=".pdf,.docx">
+            <br>
+        </fieldset>
+        <br>
+            <input type="submit" value="REGISTER"> 
+
+    </form>
+</body>
+</html>
