@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display:grid;
+            grid-template-columns:1fr  3fr ;
+            grid-template-rows: auto 1fr auto; /* Header and footer height 
+            set to auto, content area takes remaining space */
+            gap:20px; /* sets the gap between grid items*/
+            min-height: 100vh; /* Ensure the container takes up the full viewport height */
+        }
+        header{
+            background-color: aqua;
+            padding: 20px;
+            grid-column: 1/3;
+            grid-row: 1;
+            border: 2px solid  black;
+            border-radius: 5px;
+            text-align: center; /* Center-align header content */
+            font-family: Arial, sans-serif; /* Set a font family */
+            font-size: 24px; /* Increase font size */
+
+        }
+        article{
+            grid-column: 2;
+            grid-row: 2;
+            background-color: #f8f8f8;
+            padding: 20px;
+
+        }
+        aside{
+            grid-column: 1;
+            grid-row: 2;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-right: 2px solid yellow;
+        }
+        footer{
+            background-color: aqua;
+            grid-column: 1/3;
+            grid-row: 3;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding:20px;
+            text-align: center; /* Center-align footer content */
+
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      
+        <header>
+            <h1>Welcome to my blog</h1>
+        </header>
+        <article>
+            <h1>My article </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores a totam eius odit laboriosam officia dicta enim porro eveniet saepe voluptatem, sit culpa illum aliquam harum corrupti veniam perferendis magnam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quod similique magni eos facere maiores, quibusdam est recusandae placeat! Soluta ex inventore nesciunt accusamus blanditiis reiciendis, asperiores veritatis praesentium quibusdam.</p>
+        </article>
+        <aside>
+            <h2>other things</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nihil at ipsum beatae amet, placeat cupiditate impedit, alias neque pariatur perspiciatis mollitia aut ullam odio nulla, quam consequuntur maxime eligendi.</p>
+        </aside>
+        <footer>
+            <p>copyright myblog.com</p>
+        </footer>
+    </div>
+</body>
+</html>

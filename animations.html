@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width:200px;
+        height:200px;
+        background-color: blue;
+        animation-name: myadm;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in;
+
+
+        /* animation:myadm 5s infinite ease-in; */
+    }
+    @keyframes  myadm {
+        0%{
+            background-color:blue;
+            /* transform: translatey(100vh); */
+            transform: rotate(0deg);
+        }
+        25%{background-color:red;}
+        50%{background-color: yellow;}
+        100%{
+            background-color: brown;
+            /* transform: translateY(0); */
+            transform:rotate(-45deg) ;
+        }
+    }
+    #one{
+        animation:example 4s 3
+    }
+    @keyframes example{
+    from{
+        margin-left: 100%;
+        transform: scale(0.3);
+        color: blueviolet;
+       }
+    to{
+        margin-left: 0%;
+        transform: scale(1.5);
+        color: aqua
+       ;
+        }
+    }
+#two{
+    animation-name: changecolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes changecolor{
+    0%{color:red;}
+    25%{color:yellow;}
+    50%{color:green;}
+    100%{color:blue;}
+
+}
+
+
+</style>
+<body>
+    <div>
+        <h3>hello</h3>
+
+    </div>
+    <h2 id="one">my animation</h2>
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit repellat, tenetur error perspiciatis nemo impedit, ipsum velit est porro ab? Dolorem minima voluptatem ab distinctio, maxime ut provident velit!</p>
+</body>
+</html>
